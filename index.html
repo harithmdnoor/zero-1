@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="blank" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Login</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1 class="loginText">Login</h1>
+    <div class="content">
+        
+    <form class="loginform">
+        <fieldset class="loginfield">
+
+            <div class="question">
+                <input type="text" name="username" id="name" autocomplete="off"/>
+                <label>Username</label>
+              </div>
+
+
+              <div class="question">
+                <input type="password" name="password" id="password"/>
+                <label>Password</label>
+
+
+
+            <!-- <a class="subname"></a> <input class="inputRcorner "type="text" name="username" id="name" placeholder="  Username" /><br />
+            <a class="subpass"></a><input class="inputRcorner type="password" name="password" id="pass" placeholder="  Password" /><br />
+            <br /> -->
+            <button  type="button" class="login" onclick="verify()">Log In</button>
+            <!-- <button  type="button" class="login" onclick="signup()">Sign Up</button> -->
+            </div>
+
+            </fieldset>
+            </div>
+        </div>
+            <!-- <button class="enterbtn" type="reset">Reset</button> -->
+        </fieldset>
+    </form>
+    </div>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDjSdsPac8LpvEXcpcZme0j83UVbxZdAvI",
+            authDomain: "cbe-intern-project.firebaseapp.com",
+            databaseURL: "https://cbe-intern-project.firebaseio.com",
+            projectId: "cbe-intern-project",
+            storageBucket: "cbe-intern-project.appspot.com",
+            messagingSenderId: "1074883147012",
+            appId: "1:1074883147012:web:1cd2b81da0b1d60f6b8c51",
+            measurementId: "G-0FRFPD82JK"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        const dbl = firebase.firestore();
+    </script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="blank" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+  <div><button  class = "backBtn" onclick="back()">Back to Login</button></div>
+    <h1>Sign Up</h1>
+    <div class="content">
+
+
+    <form class="loginform">
+        <fieldset class="loginfield">
+
+            <div class="question">
+                <input type="text" name="username" id="username" autocomplete="off"/>
+                <label>Username</label>
+              </div>
+              <div class="question">
+                <input type="password" name="password" id="password"/>
+                <label>Password</label>
+              </div>
+              <div class="question">
+                <input type="password" name="password" id="confirmPassword"/>
+                <label>Confirm&nbspPassword</label>
+              </div>
+
+
+           
+            <button  type="button" class="login" onclick="signup()">Sign Up</button>
+            </div>
+
+            </fieldset>
+            </div>
+        </div>
+        </fieldset>
+    </form>
+    <script>
+        // Web app's Firebase configuration
+        var firebaseConfig = {
+              apiKey: "AIzaSyDjSdsPac8LpvEXcpcZme0j83UVbxZdAvI",
+              authDomain: "cbe-intern-project.firebaseapp.com",
+              databaseURL: "https://cbe-intern-project.firebaseio.com",
+              projectId: "cbe-intern-project",
+              storageBucket: "cbe-intern-project.appspot.com",
+              messagingSenderId: "1074883147012",
+              appId: "1:1074883147012:web:1cd2b81da0b1d60f6b8c51",
+              measurementId: "G-0FRFPD82JK"
+          };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+      </script>   
+    <script src="js/signup.js"></script>
+</body>
+</html>
