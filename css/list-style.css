@@ -1,0 +1,205 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: 5px auto;
+    border-radius: 20px 20px 20px 20px;
+    background: white;
+    padding: 10px;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0px auto;
+        border-radius: 20px 20px 20px 20px;
+        background: white;
+        padding: 10px;
+    }
+  
+    span li{
+        display: flex;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0px auto;
+        border-radius: 20px 20px 20px 20px;
+        background: white;
+        padding: 10px;
+    }
+    
+  }
+  
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+li{
+    max-width: 700px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background: white;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    margin: 5px auto;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+    border-radius: 20px 20px 20px 20px;
+}
+
+li:nth-child(even){
+    padding: 20px;
+    padding-bottom: 50px;
+    background: white;
+}
+
+li span{
+    display: block;
+    
+}
+
+
+li span:nth-child(2){
+    font-size: 22px;
+    margin-top: 6px;
+    color: #000;
+    
+}
+
+
+
+a{
+    align-self: center;
+    margin-right: 20px ;
+    font-weight: bold;
+}
+.checkbox{
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    font-size: 15px;
+    align-self:center;
+}
+.checkboxLabel{
+    padding: 10px;
+    font-size: 10px;
+    align-self:center;
+}
+
+.button {
+    color: #000 !important;
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    transition: all 0.4s ease 0s;
+    font-size: 15px;
+    border-radius: 60px;
+    margin: 10px;
+    align-self:center;
+}
+
+.button:hover,:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+
+button {
+    color: #000 !important;
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    transition: all 0.4s ease 0s;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    align-self:center;
+}
+
+button:hover {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+
+
+input[type="text"] {
+    /* appearance: none;
+    background-color: none;
+    border: 1px solid #d2d2d2;
+    line-height: 0;
+    font-size: 17px;
+    padding: 10px 15px;
+    color: #000;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    align-self:center;
+    margin-right: 20px; */
+    resize: vertical;
+  }
+/* input[type="text"]:hover,:focus {
+    outline: none;
+    background:white ;
+    color: black;
+    border: 1px solid #d2d2d2;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+
+input[type="text"]:focus ~ label {
+    -moz-transform: translate(0, -35px);
+    -ms-transform: translate(0, -35px);
+    -webkit-transform: translate(0, -35px);
+    transform: translate(0, -35px);
+  }
+
+  
+input[type="text"]:valid ~ label {
+    text-transform: uppercase;
+    -moz-transform: translate(5px, -35px) scale(0.6);
+    -ms-transform: translate(5px, -35px) scale(0.6);
+    -webkit-transform: translate(5px, -35px) scale(0.6);
+    transform: translate(5px, -35px) scale(0.6);
+  }
+
+input[type="text"] {
+    -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+    transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  }
+  
+   */
